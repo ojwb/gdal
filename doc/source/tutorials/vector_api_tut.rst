@@ -300,7 +300,7 @@ In C++ :
         OGRPoint *poPoint = (OGRPoint *) poGeometry;
     #endif
 
-        printf( "%.3f,%3.f\n", poPoint->getX(), poPoint->getY() );
+        printf( "%.3f,%.3f\n", poPoint->getX(), poPoint->getY() );
     }
     else
     {
@@ -317,7 +317,7 @@ In C :
     if( hGeometry != NULL
             && wkbFlatten(OGR_G_GetGeometryType(hGeometry)) == wkbPoint )
     {
-        printf( "%.3f,%3.f\n", OGR_G_GetX(hGeometry, 0), OGR_G_GetY(hGeometry, 0) );
+        printf( "%.3f,%.3f\n", OGR_G_GetX(hGeometry, 0), OGR_G_GetY(hGeometry, 0) );
     }
     else
     {
@@ -353,7 +353,7 @@ In C++ :
             OGRPoint *poPoint = (OGRPoint *) poGeometry;
     #endif
 
-            printf( "%.3f,%3.f\n", poPoint->getX(), poPoint->getY() );
+            printf( "%.3f,%.3f\n", poPoint->getX(), poPoint->getY() );
         }
         else
         {
@@ -377,7 +377,7 @@ In C :
         if( hGeometry != NULL
                 && wkbFlatten(OGR_G_GetGeometryType(hGeometry)) == wkbPoint )
         {
-            printf( "%.3f,%3.f\n", OGR_G_GetX(hGeometry, 0),
+            printf( "%.3f,%.3f\n", OGR_G_GetX(hGeometry, 0),
                     OGR_G_GetY(hGeometry, 0) );
         }
         else
@@ -523,7 +523,7 @@ With GDAL 2.3 and C++11 :
                 {
                     const OGRPoint *poPoint = poGeometry->toPoint();
 
-                    printf( "%.3f,%3.f\n", poPoint->getX(), poPoint->getY() );
+                    printf( "%.3f,%.3f\n", poPoint->getX(), poPoint->getY() );
                 }
                 else
                 {
@@ -600,7 +600,7 @@ In C++ :
             {
                 OGRPoint *poPoint = (OGRPoint *) poGeometry;
 
-                printf( "%.3f,%3.f\n", poPoint->getX(), poPoint->getY() );
+                printf( "%.3f,%.3f\n", poPoint->getX(), poPoint->getY() );
             }
             else
             {
@@ -683,7 +683,7 @@ In C :
             if( hGeometry != NULL
                 && wkbFlatten(OGR_G_GetGeometryType(hGeometry)) == wkbPoint )
             {
-                printf( "%.3f,%3.f\n", OGR_G_GetX(hGeometry, 0), OGR_G_GetY(hGeometry, 0) );
+                printf( "%.3f,%.3f\n", OGR_G_GetX(hGeometry, 0), OGR_G_GetY(hGeometry, 0) );
             }
             else
             {
